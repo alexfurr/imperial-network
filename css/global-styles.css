@@ -1,0 +1,587 @@
+/* General Styles */
+
+.successText
+{
+	color:#16723d
+}
+
+.failText, .errorText
+{
+	color:#7c1818;
+}
+
+.alertText
+{
+	color: #c17d1d;
+}
+
+.smallText
+{
+	font-size:11px;
+}
+
+.greyText
+{
+	color:#9e9e9e;
+}
+
+.imperial-hidden, .hidden
+{
+		display:none;
+}
+
+
+.backButton
+{
+	margin:10px 0px;
+	padding-bottom:20px;
+	
+	line-height:40px;
+
+}
+.backButton:before
+{
+	
+
+	font-family: "Font Awesome 5 Free";
+	padding-right:6px;
+	content: "\f137"; 
+	font-size:20px;
+	font-weight:900;
+	color:#336699;
+}
+
+
+
+/* Flex Container */
+.imperial-flex-container
+{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+}
+
+
+.imperial-flex-container > div 
+{
+	padding:20px;
+	margin:20px;
+}
+
+
+
+
+
+
+
+/* Tables */
+.imperial-table
+{
+	border-collapse: collapse;	
+	margin:20px 0px;
+}
+
+.imperial-table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+.imperial-table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+.imperialTableFullWidth
+{
+	width:100%;
+}
+
+.imperial-table td.no-border {
+    border: 0px;
+}
+
+
+table.dataTable td {
+    border-bottom: 1px solid #ccc;
+	
+	
+}
+
+.imperialTable th, .imperial-table th
+{
+	background:#3a3a3a;
+	text-align:left;
+	color:#fff;
+	padding:10px;
+}
+
+.imperialTable td, .imperial-table td
+{
+	padding:10px;
+	border-bottom:1px solid #ccc;
+}
+
+.imperialTable tr:hover, .imperial-table tr:hover
+{
+	background:#f1f1f1;
+}
+
+table.imperial-align-middle td
+{
+	vertical-align:middle;
+}
+
+table.imperial-align-top td
+{
+	vertical-align:top;
+}
+
+.imperialTableAdmin tr:hover, .imperial-table  tr:hover
+{
+	background:#fff;
+}
+
+
+.no-hover tr:nth-child(even):hover
+{
+	background:#f1f1f1;
+}
+
+
+.imperialTable td.middle, .imperial-table td.middle
+{
+	vertical-align: middle;
+}
+
+/* Datatables */
+.dataTable th
+{
+	background:#3a3a3a;
+	text-align:left;
+	color:#fff;
+	padding:10px;
+	
+}
+
+
+.dataTable td
+{
+    border-bottom: 1px solid #ccc;
+}
+
+
+.dataTable tr:hover
+{
+	background:#f1f1f1;
+}
+
+
+
+.dataTables_filter
+{
+	padding:10px 0px;
+}
+
+/* Buttons */
+.imperial-button
+{
+	margin-right:5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;	
+	-webkit-border-radius: 4;
+	-moz-border-radius: 4;
+	border-radius: 4px;	
+	padding: 8px;
+	text-decoration: none;
+	color:#666;
+	border:1px solid #ccc;
+	font-size:14px;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */	
+}
+
+
+/* Add line hegiht if its from a link */
+a.imperial-button {
+	line-height:50px;
+}
+
+.imperial-button:hover
+{
+	cursor:pointer;	
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */	
+	
+}
+
+.imperial-delete
+{
+	background:#b51717;
+	color:#fff;
+	border:1px solid red;
+}
+.imperial-delete:before
+{	
+	font-family: "Font Awesome 5 Free";	
+	padding-right:7px;
+	content: "\f2ed"; 
+	font-weight:300;
+}
+
+/* Selected Button */
+
+a.selected
+{
+	color:#fff;
+	background: rgb(30,87,153); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+a.selected:hover
+{
+	cursor:default;;
+	color:#fff;
+	background: rgb(30,87,153); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+/* Custom Styles */
+
+/* Makes links in the tooltip glossary WHITE instead of blue which is hard to see */
+#ttcont a{
+
+	color:white;
+}
+
+
+
+/* Forms */
+
+
+
+.imperial-form label
+{
+	display:block;
+	padding:5px 0px 5px 0px;
+	font-weight:bold;
+}
+
+.imperial-form input[type=text] 
+{
+	padding:5px;
+	border-radius:4px;
+	border:1px solid #ccc;
+	
+}
+
+.imperial-form input[type=submit] 
+{
+	margin-top:15px;	
+	display:block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;	
+	-webkit-border-radius: 4;
+	-moz-border-radius: 4;
+	border-radius: 4px;	
+	padding: 8px;
+	text-decoration: none;
+	color:#fff;
+	border:1px solid #ccc;
+	font-size:14px;
+	background: rgb(59,103,158); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */	
+}
+
+.imperial-form select
+{
+	font-size:16px;
+	border-radius:2px;
+	padding:2px;
+	margin:2px;
+}
+
+.imperial-form .mediumTextArea
+{
+	height:60px;
+	width:400px;
+}
+
+/* End of Forms */
+
+
+.imperial-feedback
+{
+	padding:20px;
+	margin:5px 0px;
+}
+
+.imperial-feedback-success
+{
+	border-left:5px solid green;
+	background:#f1f7ef;
+}
+
+.imperial-feedback-alert
+{
+	border-left:5px solid #f29718;
+	background:#fff7ed;
+}
+
+.imperial-feedback-error
+{
+	border-left:5px solid #8c0b0b;
+	background:#ffeaea;
+}
+
+.imperial-dropdown
+{
+	padding:5px;
+	font-size:16px;
+	border-radius:5px;
+}
+
+
+/* Icon Types */
+.fileTypeLink
+{
+	background-repeat: no-repeat;
+	background-size: 45px;
+	line-height:45px;
+	padding-left: 48px;  /* width of the image plus a little extra padding */
+	display: block;  /* may not need this, but I've found I do */	
+	padding-bottom:10px;
+	
+}
+
+.pdfDownload
+{	
+	background-image: url('../assets/icons/pdf.png');
+}
+
+.docDownload
+{	
+	background-image: url('../assets/icons/doc.png');
+}
+
+.pptDownload
+{	
+	background-image: url('../assets/icons/ppt.png');
+}
+
+.xlsDownload
+{	
+	background-image: url('../assets/icons/xls.png');
+}
+
+.txtDownload
+{	
+	background-image: url('../assets/icons/txt.png');
+}
+
+
+.mp3Download
+{	
+	background-image: url('../assets/icons/mp3.png');
+}
+
+
+
+/* Admin Settings */
+.admin-settings-group
+{
+	
+	border:1px solid #ccc;
+	padding:20px;
+	margin:10px 0px;
+	background:white;
+	-webkit-box-shadow: 10px 10px 38px 0px rgba(194,194,194,1);
+	-moz-box-shadow: 10px 10px 38px 0px rgba(194,194,194,1);
+	box-shadow: 10px 10px 38px 0px rgba(194,194,194,1);	
+}
+
+.admin-settings-group h2
+{
+		padding-top:0px;
+		margin-top:0px;
+}
+
+
+
+
+
+/* Mini Menu Horizontal */
+ul.imperial-mini-menu
+{
+    list-style-type: none;
+	padding:10px 0px;
+}
+
+ul.imperial-mini-menu li{
+	display: inline-block;
+	border:1px solid #ccc;
+	margin:5px;
+	border-radius:5px;
+}
+
+ul.imperial-mini-menu li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+
+/* Custom for document links using MIME types pluygin */
+a.mtli_attachment {
+    display: block;
+}
+
+
+
+
+
+/* Floats */
+.fL
+{
+	float:left;
+}
+
+.fR
+{
+	float:right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/* Rounded Images */
+
+
+.rounded-image
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: inline-block;	
+}
+
+
+.rounded-image img
+{
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+}
+
+
+
+/* Modals
+/* The Modal (background) */
+.imperial-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.imperial-modal-content-wrap
+{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+	max-width:800px;
+	
+	
+}
+
+#imperial-modal-content{
+	color:#565656;
+}
+
+/* The Close Button */
+.imperial-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.imperial-modal-close:hover,
+.imperial-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

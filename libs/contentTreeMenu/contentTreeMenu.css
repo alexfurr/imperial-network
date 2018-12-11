@@ -1,0 +1,59 @@
+.contentTreeMenu .fa-plus-square, .contentTreeMenu .fa-minus-square
+{
+	position: relative;
+}
+
+.contentTreeMenu .fa-plus-square:hover, .contentTreeMenu .fa-minus-square:hover
+{
+	cursor:pointer;
+}
+
+
+
+.contentTreeMenu ul > li
+{
+	border:1px solid #ccc;	
+	line-height:30px;
+	border-radius:3px;
+	background:#f9f9f9;
+	font-size:16px;
+}
+
+
+
+
+.contentTreeMenu > ul > ol > ol
+{
+		list-style-type: lower-roman;
+}
+
+
+.contentTreeMenu ul > ol > li
+{
+
+	font-size:14px;
+}
+
+
+.contentTreeMenu  a
+{
+	padding-right:6px;
+}
+
+
+.contentTreeMenu ul > li a
+{	
+	padding:10px;	
+	padding-right:6px;
+	
+}
+
+.contentTreeMenu .toggleIcon
+{
+	color:#ccc;
+}
+
+.contentTreeMenu .toggleIcon:hover
+{
+	color:#a8a8a8;
+}

@@ -1,0 +1,152 @@
+
+/* Stripes */
+.stripes tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+
+
+.stripes-red tr:nth-child(odd){
+	background-color: #fff9f9;
+}
+
+.stripes-blue tr:nth-child(odd){
+	background-color: #f7faff;
+}
+
+/* Table 1 */
+.imperial-table-1, .imperial-table-3, .imperial-table-3,  .imperial-table-4,  
+{
+	border-collapse: collapse;	
+	margin:20px 0px;
+
+}
+
+
+
+
+.imperial-table-1 td.no-border {
+    border: 0px;
+}
+
+
+.imperial-table-1  td {
+    border-bottom: 1px solid #ccc;
+}
+
+.imperial-table-1 th
+{
+	background:#3a3a3a;
+	text-align:left;
+	color:#fff;
+	padding:10px;
+}
+
+.imperial-table-1  td
+{
+	padding:10px;
+	border-bottom:1px solid #ccc;
+}
+
+/* Table 2 */
+.imperial-table-2 td:nth-child(1){
+	background-color: #565656;
+	color:#fff;
+}
+
+.imperial-table-2  td {
+    border-bottom: 1px solid #ccc;
+}
+
+.imperial-table-2 th
+{
+	background:#3a3a3a;
+	text-align:left;
+	color:#fff;
+	padding:10px;
+}
+
+.imperial-table-2  td
+{
+	padding:10px;
+	border-bottom:1px solid #ccc;
+}
+
+
+/* Table 3 */
+.imperial-table-3 td:nth-child(1)
+{
+	border-right:5px solid #ccc;
+	background:#fff;
+	text-align:right;
+	font-weight:bold;
+	
+}
+
+
+.imperial-table-3  td {
+    border-bottom: 1px solid #ccc;
+}
+
+.imperial-table-3 th
+{
+	background:#f7f7f7;
+	text-align:left;
+	padding:10px;
+	font-weight:bold;
+}
+
+.imperial-table-3 th:nth-child(1)
+{
+	border-right:5px solid #ccc;
+	text-align:right;
+}
+
+.imperial-table-3  td
+{
+	padding:10px;
+	border:1px solid #969696;
+}
+
+
+/* Table 4 */
+.imperial-table-4  td {
+    border-bottom: 1px solid #ccc;
+}
+
+.imperial-table-4 th
+{
+	background:#618496;
+	text-align:left;
+	padding:10px;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+.imperial-table-4  td
+{
+	padding:10px;
+	border:1px solid #206487;
+}
+
+/* Table 5*/
+.imperial-table-5  td {
+    border-bottom: 1px solid #ccc;
+}
+
+.imperial-table-5 th
+{
+	background:#7c0b2d;
+	text-align:left;
+	padding:10px;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+.imperial-table-5  td
+{
+	padding:10px;
+	border:1px solid #206487;
+}

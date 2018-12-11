@@ -1,0 +1,257 @@
+/* Topics home
+---------------- */
+div.page_list_container
+{
+	display:block;
+	margin: 10px 0px;	
+}
+
+
+
+div.pages_list {
+display:flex;
+flex-wrap: wrap;
+
+}
+
+div.page_tile {
+
+    width:			200px;
+    margin:	        0;
+    padding:        10px;
+    
+}
+
+div.page_tile > div {
+    position:		relative;
+    border:         1px solid #afafaf;
+    height:         120px;
+    box-shadow:     0px 2px 7px 0px #00000045;
+}
+
+div.page_tile > div > a {
+    display:        block;
+    margin:	        0;
+    padding:        0;
+}
+
+div.page_tile div.image {
+    position:		absolute;
+    top:            0;
+    right:          0;
+    bottom:         0;
+    left:           0;
+    background:     rgba(255,255,255,0.9);
+    background-size:        132%;
+    background-position:    center center;
+    background-repeat:      no-repeat;
+}
+
+div.page_tile div.overlay {
+    position:		absolute;
+    height:         auto;
+    min-height:     30px;
+    right:          0;
+    left:           0;
+    background:     rgba(255,255,255,0.8);
+}
+
+div.page_tile div.title {
+    font-size:      14px;
+    color:          #003a73;
+    padding:        4px 4px 4px 8px;
+}
+
+div.page_tile div.progression {
+	
+	display:block;
+	padding:0px 10px 15px 15px;
+}
+
+
+div.circles-tiled
+{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+div.page-list-circle-item
+{
+	text-align:center;
+	padding:20px;
+    max-width: 200px;
+	font-size:13px;
+}
+
+
+/* Large Boxes */
+div .boxed-large .page_tile
+{
+	width: 33%;
+	
+}
+
+/* Large Boxes */
+div .boxed-large .page_tile .title
+{
+	font-size:24px;
+
+}
+
+div .boxed-large > div > div
+{
+	height:300px;
+	
+}
+
+
+
+
+/* List Items */
+div.box-list > div
+{
+	width: 100%;
+	margin-bottom:10px;
+	
+}
+
+div.box-list > div
+{
+	width: 100%;
+	
+}
+
+div.box-list .listWrap
+{
+	display:flex;
+	border-bottom:1px solid #ccc;
+	padding:10px 0px;
+}
+
+div.box-list .listWrap .pageInfo
+{
+	color:#666;
+	font-size:12px;
+	padding-left:20px;
+}
+
+div.box-list .listWrap .pageInfo .title
+{
+	color:#000;
+	font-size:20px;
+}
+
+div.box-list .image
+{
+	min-width:100px;
+	
+}
+
+div.box-list .readMore
+{
+	color:#336699;
+}
+
+div.box-list img
+{
+	width: 100px;	
+	border-radius:3px;
+	
+
+}
+
+
+@media only screen and ( min-width: 1200px ) and ( max-width: 1299px ) {
+	div.page_tile div.image {
+        background-size:        142%;
+    }
+}
+@media only screen and ( min-width: 1100px ) and ( max-width: 1199px ) {
+	div.page_tile div.image {
+        background-size:        155%;
+    }
+    div.page_tile div.title {
+        padding-bottom:5px;
+    }
+}
+@media only screen and ( min-width: 995px ) and ( max-width: 1099px ) {
+	div.page_tile div.image {
+        background-size:        190%;
+    }
+    div.page_tile div.title {
+        padding-bottom:5px;
+    }
+}
+@media only screen and ( min-width: 960px ) and ( max-width: 994px ) {
+	div.page_tile div.image {
+        background-size:        230%;
+    }
+    div.page_tile div.title {
+        padding-bottom:5px;
+    }
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 959px ) {
+	div.page_tile {
+        width:			50%;
+    }
+    div.page_tile div.image {
+        background-size:        160%;
+    }
+    div.page_tile div.title {
+        padding-bottom:5px;
+    }    
+}
+@media only screen and ( min-width: 611px ) and ( max-width: 767px ) {
+	div.page_tile {
+        width:			100%;
+        float:			none;
+    }
+    div.page_tile div.image {
+        background-size:        160%;
+    }
+    div.page_tile div.title {
+        padding-bottom:5px;
+    }
+}
+@media only screen and ( min-width: 481px ) and ( max-width: 610px ) {
+    div.page_tile {
+        width:			100%;
+        float:			none;
+    }
+    div.page_tile div.image {
+        background-size:        160%;
+    }
+    div.page_tile div.title {
+        padding-bottom:5px;
+    }
+}
+@media only screen and ( max-width: 480px ) {
+    div.page_tile {
+        width:			100%;
+        float:			none;
+    }
+    div.page_tile div.image {
+        background-size:        auto 100%;
+        background-position:    center bottom;
+    }
+    div.page_tile div.title {
+        padding-bottom:5px;
+    }
+}
+
+@media only screen and ( max-width: 700px ) {
+    div .boxed-large .page_tile
+ {
+        width:			100%;
+        float:			none;
+    }
+
+}
+
+
+
+
+
+
+
