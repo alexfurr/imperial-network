@@ -11,6 +11,58 @@ if ( isset( $_GET['action'] ) )
 		$myAction = $_GET['action'];
 		switch ($myAction)
 		{
+			
+			case "bulkEnrolByYear":
+				
+				$programmeCode = $_POST['programmeCode'];
+				$yos = $_POST['yos'];
+				$myUsers = imperialQueries::getStudentsByYOS($yos, $programmeCode);
+
+
+				$studentCount= count($myUsers);
+
+				if($studentCount>=1)
+				{
+					$enrolledCount = 0;
+					foreach ($myUsers as $userInfo)
+					{
+						
+						// See if they have a wordpress account						
+						$firstName = $userInfo['first_name'];
+						$lastName = $userInfo['last_name'];
+						$email = $userInfo['email'];
+						$username = $userInfo['username'];
+						
+						// Check to see if the user has a wordpress account
+						$userInfo = get_user_by( 'login', $username );
+						
+						if($userInfo)
+						{
+							$userID = $userInfo->ID;			
+						}
+						else
+						{
+							$userID = imperialNetworkActions::createWP_user($username);			
+						}
+						
+						if($userID)
+						{
+							// Now make them a subscriber
+							$userObject = new WP_User( $userID );
+							// Add role
+							$userObject->set_role( 'subscriber' );
+							$enrolledCount++;
+						}
+					}
+				}
+				
+				echo '<div class="notice notice-success is-dismissible"><p>'.$enrolledCount.' users added as students</p></div>';
+				
+			
+			
+			break;
+			
+			
 
 			case "CSVUpload":
 			
@@ -118,7 +170,33 @@ echo imperialNetworkDraw::userSearchForm($args);
 
 ?>
 </div>
+<div class="admin-settings-group">
+<h2>Bulk Enrol by year of study</h2>
+<form name="csvUploadForm" action="users.php?page=imperial-add-users&action=bulkEnrolByYear"  method="post" enctype="multipart/form-data">
+<label for="programmeCode">Programme</label>
+<select name="programmeCode" id="programmeCode">
+<option value="MBBS">MBBS</option>
+<option value="BMB">BMB</option>
+</select><br/>
+<?php
+echo '<label for="yos">Year of study</label> ';
+echo '<select name="yos" id="yos">';
+$i=1;
+while($i<=6)
+{
+	echo '<option value="'.$i.'">Year '.$i.'</option>';
+	$i++;
+}
+echo '</select><br/>';
 
+echo '<input type="submit" value="Bulk enrol" name="submit" class="button-primary" />';
+// Add nonce
+wp_nonce_field('formNonce');    
+?>
+
+</form>
+
+</div>
 <div class="admin-settings-group">
 <h2>Bulk Upload Students</h2>
 <form name="csvUploadForm" action="users.php?page=imperial-add-users&action=CSVUpload"  method="post" enctype="multipart/form-data">
