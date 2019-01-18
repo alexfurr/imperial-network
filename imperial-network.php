@@ -2,8 +2,9 @@
 /*
 Plugin Name: Imperial Network
 Description: Installs the tables required for the Imperial Multisite and adds admin screens etc. Pretty essential.
-Version: 0.1
+Version: 0.1.1
 Author: Alex Furr
+GitHub Plugin URI: https://github.com/ImperialCollegeLondon/imperial-network
 */
 
 // Global defines
